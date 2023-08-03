@@ -5,7 +5,8 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@remix-run/css-bundle": "*",
@@ -29,6 +30,5 @@
   },
   "engines": {
     "node": ">=14.0.0"
-  },
-  "postinstall": "patch-package"
+  }
 }
