@@ -1,0 +1,13 @@
+diff --git a/node_modules/@shopify/oxygen-workers-types/index.d.ts b/node_modules/@shopify/oxygen-workers-types/index.d.ts
+index c4dbe74..4f6dc16 100644
+--- a/node_modules/@shopify/oxygen-workers-types/index.d.ts
++++ b/node_modules/@shopify/oxygen-workers-types/index.d.ts
+@@ -259,7 +259,7 @@ interface Element {
+   prepend(content: Content, options?: ContentOptions): Element;
+   append(content: Content, options?: ContentOptions): Element;
+   replace(content: Content, options?: ContentOptions): Element;
+-  remove(): Element;
++  remove(): void;
+   removeAndKeepContent(): Element;
+   setInnerContent(content: Content, options?: ContentOptions): Element;
+   onEndTag(handler: (tag: EndTag) => void | Promise<void>): void;
